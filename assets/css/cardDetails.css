@@ -162,7 +162,7 @@
     box-shadow: 1px 3px 10px 2px rgb(78, 78, 78);
 }
 .progress-bar .bar{
-    /* width: 50%; */
+    width: 50%;
     height: 10px;
 }
 #hp{

@@ -81,7 +81,7 @@ montarCard=(name, types, abilities, stats, image)=>{
     var states_pokemon = document.querySelectorAll('.state p:last-child'); 
     
     image_pokemon.src = image
-    console.log(states_pokemon)
+    // console.log(states_pokemon)
     // var types_pokemon = document.querySelectorAll(".card-type span")
     var types_card = document.getElementsByClassName('card-type')[0];
 
@@ -132,8 +132,7 @@ montarCard=(name, types, abilities, stats, image)=>{
         // console.log(hp)
 
         // console.log(stats[i].stat.name)
-        console.log(stats[i].base_stat)
-        // console.log(stats[i])
+        // console.log(stats[i].base_stat)
     }
 }
 
