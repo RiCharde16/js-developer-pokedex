@@ -12,9 +12,60 @@
     <!-- Arquvio CSS local -->
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/pokedex.css">
+    <link rel="stylesheet" href="./assets/css/cardDetails.css">
 </head>
 <body>
+    <!-- Pokemon Details card here   -->
+    <section class="container">
+        <div id="card-container">
+            <button id="btn_close">X</button>
+            <div class="card-header">
+                <div class="card-img">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="pokemon-img"> 
+                </div>
+                <h1 id="name">BULBASAUR</h1>
+            </div>
+            <div class="card-type">
+                <!-- <span>Grass</span>
+                <span>Poison</span> -->
+            </div>
+            <div class="card-main">
+                <div class="abilities">
+                    <span>abilities</span>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="states">
+                    <span>States</span>
+                    <div class="state">
+                        <p>HP</p>
+                        <div class="progress-bar" title="65 / HP">
+                            <div class="bar" id="hp"></div>
+                        </div>
+                        <p></p>
+                    </div>
+                    <div class="state">
+                        <p>Attack</p>
+                        <div class="progress-bar" title="64 / Attack">
+                            <div class="bar" id="attack"></div>
+                        </div>
+                        <p></p>
+                    </div>
+                    <div class="state">
+                        <p>Defense</p>
+                        <div class="progress-bar" title="40 / Defense">
+                            <div class="bar" id="defense"></div>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
     <section class="content">
+        
         <h1>Pokedex</h1>
         <ol id="pokemonlist" class="pokemons">
             <!-- <li class="pokemon">
@@ -31,6 +82,7 @@
             </li> -->
 
             <!-- .... Pokemon Here ..... -->
+           
         </ol>
         <div class="pagination">
             <button id="btn-next">More Pokemons</button>

@@ -20,6 +20,7 @@ function convertPokeApiDetailToPokemon(pokeDetail){
 poekApi.getPokemonsDetail = (pokemon) =>{
     return fetch(pokemon.url)
         .then((response)=> response.json())
+        // .then((response) => { console.log(response)})
         .then(convertPokeApiDetailToPokemon)
 }
 
@@ -31,7 +32,7 @@ poekApi.getPokemons = (offset = 0, limit = 6) =>{
         return response.json(); // Transformando o promyse da requisição em JSON
     })
     .then((jsonBody)=> jsonBody.results)
-    .then((pokemons)=> pokemons.map(poekApi.getPokemonsDetail))
+    .then((pokemons)=> pokemons.map(poekApi.getPokemonsDetail)) 
     .then((detailRequests)=> Promise.all(detailRequests))
     .then((pokemonDetails)=> pokemonDetails)
     .catch((error)=>console.log(error))
